@@ -90,15 +90,11 @@
           </div>
         </div>
         <div class="form-group">
-          <label>Preferred contact</label>
-          <div class="radio-group">
-            <label class="radio-label">
-              <input type="radio" name="preferred-contact" value="phone" checked /> Phone
-            </label>
-            <label class="radio-label">
-              <input type="radio" name="preferred-contact" value="email" /> Email
-            </label>
-          </div>
+          <label for="preferred-contact">Preferred contact</label>
+          <select id="preferred-contact" name="preferred-contact">
+            <option value="phone" selected>Phone</option>
+            <option value="email">Email</option>
+          </select>
         </div>
         <div class="form-row">
           <div class="form-group">

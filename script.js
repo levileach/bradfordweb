@@ -19,8 +19,8 @@ function setPreferredContact(value) {
   emailInput.required = value === 'email';
 }
 
-document.querySelectorAll('input[name="preferred-contact"]').forEach(radio => {
-  radio.addEventListener('change', (e) => setPreferredContact(e.target.value));
+document.getElementById('preferred-contact').addEventListener('change', (e) => {
+  setPreferredContact(e.target.value);
 });
 
 // Set initial state to match the checked default (phone)
