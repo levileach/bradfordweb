@@ -75,45 +75,47 @@
       <h2>Let's talk about your business.</h2>
       <p>Tell me a bit about what you're looking for and I'll get back to you within a day.</p>
     </div>
-    <form class="contact-form fade-in" name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact" />
-      <div class="form-row">
-        <div class="form-group">
-          <label for="name">Your name</label>
-          <input type="text" id="name" name="name" required placeholder="Jane Smith" />
+    <div class="contact-right">
+      <form class="contact-form fade-in" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required placeholder="Jane Smith" />
+          </div>
+          <div class="form-group">
+            <label for="business">Business name</label>
+            <input type="text" id="business" name="business" placeholder="Smith's Cleaners" />
+          </div>
         </div>
         <div class="form-group">
-          <label for="business">Business name</label>
-          <input type="text" id="business" name="business" placeholder="Smith's Cleaners" />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="jane@example.com" />
         </div>
+        <div class="form-group">
+          <label for="type">Business type</label>
+          <select id="type" name="type">
+            <option value="">Select one</option>
+            <option>Contractor / Trade</option>
+            <option>Dry Cleaner / Laundry</option>
+            <option>Salon / Beauty</option>
+            <option>Restaurant / Food</option>
+            <option>Professional Services</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Anything else</label>
+          <textarea id="message" name="message" placeholder="Do you have a site already? What are you looking for?"></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn">Send message</button>
+        </div>
+      </form>
+      <div class="form-success" hidden>
+        <p class="form-success-title">Message sent.</p>
+        <p class="form-success-sub">I'll be in touch soon. <button class="form-success-reset" type="button">Submit another request</button></p>
       </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="jane@example.com" />
-      </div>
-      <div class="form-group">
-        <label for="type">Business type</label>
-        <select id="type" name="type">
-          <option value="">Select one</option>
-          <option>Contractor / Trade</option>
-          <option>Dry Cleaner / Laundry</option>
-          <option>Salon / Beauty</option>
-          <option>Restaurant / Food</option>
-          <option>Professional Services</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="message">Anything else</label>
-        <textarea id="message" name="message" placeholder="Do you have a site already? What are you looking for?"></textarea>
-      </div>
-      <div class="form-submit">
-        <button type="submit" class="btn">Send message</button>
-      </div>
-    </form>
-    <div class="form-success" hidden>
-      <p class="form-success-title">Message sent.</p>
-      <p class="form-success-sub">I'll be in touch soon. <button class="form-success-reset" type="button">Send another message</button></p>
     </div>
   </section>
   <!-- submit form test -->
