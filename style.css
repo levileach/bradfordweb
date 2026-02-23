@@ -319,8 +319,8 @@ section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 0 4rem 6rem;
+  justify-content: center;
+  padding: 0 4rem;
   border-bottom: none;
 }
 
@@ -350,7 +350,7 @@ section {
 }
 
 @media (max-width: 900px) {
-  .submission { padding: 0 2rem 5rem; }
+  .submission { padding: 0 2rem; }
 }
 
 
