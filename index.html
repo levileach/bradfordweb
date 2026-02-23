@@ -76,7 +76,7 @@
       <p>Tell me a bit about what you're looking for and I'll get back to you within a day.</p>
     </div>
     <div class="contact-right">
-      <form class="contact-form fade-in" name="contact" method="POST" data-netlify="true">
+      <form class="contact-form fade-in" name="contact" method="POST" action="/contact-submission" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
         <div class="form-row">
           <div class="form-group">
@@ -112,10 +112,6 @@
           <button type="submit" class="btn">Send message</button>
         </div>
       </form>
-      <div class="form-success" hidden>
-        <p class="form-success-title">Message sent.</p>
-        <p class="form-success-sub">I'll be in touch soon. <button class="form-success-reset" type="button">Submit another request</button></p>
-      </div>
     </div>
   </section>
   <!-- submit form test -->
