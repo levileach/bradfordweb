@@ -9,3 +9,19 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Preferred contact method — toggle required on phone/email
+const phoneInput = document.getElementById('phone');
+const emailInput = document.getElementById('email');
+
+function setPreferredContact(value) {
+  phoneInput.required = value === 'phone';
+  emailInput.required = value === 'email';
+}
+
+document.querySelectorAll('input[name="preferred-contact"]').forEach(radio => {
+  radio.addEventListener('change', (e) => setPreferredContact(e.target.value));
+});
+
+// Set initial state to match the checked default (phone)
+setPreferredContact('phone');
