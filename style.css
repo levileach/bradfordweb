@@ -87,7 +87,8 @@ nav {
 }
 
 .hero h1 em {
-  font-style: italic;
+  /* font-style: italic; */
+  /* font-style: normal; */
   color: var(--mid);
 }
 
