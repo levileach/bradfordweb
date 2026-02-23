@@ -314,6 +314,12 @@ section {
   margin-top: 0.5rem;
 }
 
+.bot-field {
+  position: absolute;
+  left: -9999px;
+  overflow: hidden;
+}
+
 /* SUBMISSION PAGE */
 .submission {
   min-height: 100vh;
