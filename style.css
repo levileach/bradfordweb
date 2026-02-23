@@ -315,6 +315,8 @@ section {
 }
 
 /* FORM SUCCESS */
+.form-success[hidden] { display: none; }
+
 .form-success {
   display: flex;
   flex-direction: column;
