@@ -394,18 +394,6 @@ footer p {
 }
 
 /* RESPONSIVE */
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
-    padding: 1rem 1.5rem;
-  }
-  .nav-links { gap: 1.4rem; }
-  .hero { padding-top: 9rem; }
-  .hero-btns { justify-content: center; }
-}
-
 @media (max-width: 900px) {
   nav { padding: 1.2rem 2rem; }
   .hero { padding: 6rem 2rem; }
@@ -417,4 +405,16 @@ footer p {
   #about, #contact { grid-template-columns: 1fr; gap: 3rem; }
   .form-row { grid-template-columns: 1fr; }
   footer { padding: 2rem; flex-direction: column; gap: 0.5rem; text-align: center; }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 1rem 1.5rem;
+  }
+  .nav-links { gap: 1.4rem; }
+  .hero { padding-top: 9rem; }
+  .hero-btns { justify-content: center; }
 }
