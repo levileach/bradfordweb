@@ -10,7 +10,9 @@ Static single-page marketing site for Levi Bradford Web Design, targeting NYC sm
 
 - `index.html` — all markup; one page with nav, hero, services, about, contact, and footer sections
 - `style.css` — all styles; uses CSS custom properties (`--black`, `--off-white`, `--mid`, `--accent`, `--border`) defined in `:root`
-- `script.js` — single `IntersectionObserver` that triggers `.fade-in` → `.visible` transitions on scroll
+- `script.js` — scroll-triggered fade-in via `IntersectionObserver`, preferred contact toggle (makes phone or email `required` based on dropdown), widow prevention for `p` and `h2` tags (replaces last space before final word with `\u00A0`, handles `<br>`-split lines)
+- `contact-submission.html` — confirmation page; form redirects here via `action="/contact-submission"`
+- `favicon.svg` — custom LBWD monogram (2×2 grid, full-bleed, no padding)
 
 ## Deployment
 
