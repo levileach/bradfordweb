@@ -419,4 +419,6 @@ footer p {
   .hero { padding-top: 9rem; }
   .hero-btns { flex-direction: column; align-items: center; }
   .hero-btns .btn { padding: 0.65rem 1.4rem; font-size: 0.78rem; width: 75vw; }
+  .form-submit { display: flex; justify-content: center; }
+  .form-submit .btn { padding: 0.65rem 1.4rem; font-size: 0.78rem; width: 75vw; text-align: center; }
 }
