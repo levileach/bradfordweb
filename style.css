@@ -435,7 +435,7 @@ footer p {
 @media (max-width: 768px) {
   nav { padding: 1rem 1.5rem; }
 
-  .nav-logo { font-size: 0.9rem; }
+  .nav-logo { font-size: 1rem; }
 
   .nav-toggle { display: flex; }
 
@@ -447,7 +447,7 @@ footer p {
     gap: 0;
     padding: 0.5rem 1.5rem 1rem;
     background: var(--off-white);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--mid);
     opacity: 0;
     transform: translateY(-4px);
     pointer-events: none;
@@ -472,7 +472,7 @@ footer p {
 
 @media (max-width: 600px) {
   .hero-btns { flex-direction: column; align-items: center; }
-  .hero-btns .btn { padding: 0.65rem 1.4rem; font-size: 0.78rem; width: 75vw; }
+  .hero-btns .btn { padding: 0.65rem 1.4rem; font-size: 0.85rem; width: 75vw; }
   .form-submit { display: flex; justify-content: center; }
-  .form-submit .btn { padding: 0.65rem 1.4rem; font-size: 0.78rem; width: 75vw; text-align: center; }
+  .form-submit .btn { padding: 0.65rem 1.4rem; font-size: 0.85rem; width: 75vw; text-align: center; }
 }
