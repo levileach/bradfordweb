@@ -128,7 +128,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
 }
 
 .hero-btns .btn {
@@ -403,6 +402,8 @@ footer p {
     padding: 1rem 1.5rem;
   }
   .nav-links { gap: 1.4rem; }
+  .hero { padding-top: 9rem; }
+  .hero-btns { justify-content: center; }
 }
 
 @media (max-width: 900px) {
