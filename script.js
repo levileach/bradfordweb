@@ -25,3 +25,7 @@ document.getElementById('preferred-contact').addEventListener('change', (e) => {
 
 // Set initial state to match the checked default (phone)
 setPreferredContact('phone');
+
+document.querySelectorAll('p').forEach(p => {
+  p.innerHTML = p.innerHTML.replace(/\s+(\S+)\s*$/, '\u00A0$1');
+});
