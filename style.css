@@ -62,10 +62,11 @@ nav {
 /* HERO */
 .hero {
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 0 4rem 6rem;
+  justify-content: center;
+  padding: 6rem 4rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -127,6 +128,13 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
+}
+
+.hero-btns .btn {
+  flex: 1 1 auto;
+  max-width: 14rem;
+  text-align: center;
 }
 
 .btn-outline:hover {
@@ -399,7 +407,7 @@ footer p {
 
 @media (max-width: 900px) {
   nav { padding: 1.2rem 2rem; }
-  .hero { padding: 0 2rem 5rem; }
+  .hero { padding: 6rem 2rem; }
   section { padding: 5rem 2rem; }
   .services-grid { grid-template-columns: 1fr; }
   .service-item { border-right: none; border-bottom: 1px solid var(--border); padding: 2rem 0; }
