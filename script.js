@@ -27,13 +27,12 @@ document.getElementById('preferred-contact').addEventListener('change', (e) => {
 setPreferredContact('phone');
 
 
-// remove hanging words for p tags
-document.querySelectorAll('p').forEach(p => {
-  p.innerHTML = p.innerHTML.replace(/\s+(\S+)\s*$/, '\u00A0$1');
-});
+// remove hanging words for p and h2 tags
+function preventWidows(el) {
+  el.innerHTML = el.innerHTML
+    .split(/(<br\s*\/?>)/gi)
+    .map(seg => /^<br/i.test(seg) ? seg : seg.replace(/\s+(\S+)\s*$/, '\u00A0$1'))
+    .join('');
+}
 
-
-// remove hangings words for h2 tags
-document.querySelectorAll('h2').forEach(p => {
-  p.innerHTML = p.innerHTML.replace(/\s+(\S+)\s*$/, '\u00A0$1');
-});
+document.querySelectorAll('p, h2').forEach(preventWidows);
