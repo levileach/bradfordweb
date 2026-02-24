@@ -418,5 +418,5 @@ footer p {
   .nav-links { gap: 1.4rem; }
   .hero { padding-top: 9rem; }
   .hero-btns { flex-direction: column; align-items: center; }
-  .hero-btns .btn { padding: 0.65rem 1.4rem; font-size: 0.78rem; }
+  .hero-btns .btn { padding: 0.65rem 1.4rem; font-size: 0.78rem; width: 75vw; }
 }
